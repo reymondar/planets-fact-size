@@ -1,0 +1,11 @@
+.container {
+  width: 60%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  object-fit: none;
+  width: 100%;
+}

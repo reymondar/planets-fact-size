@@ -1,0 +1,35 @@
+.planet-info-container {
+  width: 40em;
+}
+
+.planet-buttons > * {
+  display: flex;
+  width: 100%;
+
+  padding: 1.4em 1.3em;
+  margin-bottom: 1.5em;
+
+  font-family: "Spartan", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: #070724;
+  color: var(--main-gray);
+
+  border: 1px solid var(--main-blackish);
+}
+
+.planet-buttons b {
+  margin-left: 2em;
+  letter-spacing: 0.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+
+/* .planet-buttons :hover {
+  background-color: var(--mercury);
+} */
+
+.planet-buttons :active {
+  background-color: var(--mercury);
+}

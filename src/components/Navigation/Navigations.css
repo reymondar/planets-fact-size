@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4em 0 4em;
+}
+
+.nav-items {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items > * {
+  margin-left: 2em;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.nav-items > *:hover {
+  cursor: pointer;
+  color: var(--main-blackish);
+}
