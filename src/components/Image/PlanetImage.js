@@ -3,7 +3,7 @@ import "./Image.css";
 export const PlanetImage = ({ image }) => {
   return (
     <div className="planet-image">
-      {image instanceof String ? (
+      {typeof image === "string" ? (
         <img src={image} alt="" />
       ) : (
         <div className="planet-images-compiled">
