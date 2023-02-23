@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import planetsInfo from "../../planetsInfo.json";
 import { PlanetFacts } from "../Facts/PlanetFacts";
-import { PlanetImage } from "../Image/PlanetImage";
 import { PlanetData } from "../Data/PlanetData";
 import "./Planets.css";
 
@@ -31,34 +30,31 @@ export const PlanetLanding = ({ planetId }) => {
     images,
   } = planetsInfo[selectedPlanet];
 
-  const planet = planetsInfo[selectedPlanet];
-
   //Buttons function to display data
   const handleClick = (num) => {
-    if (num === "Overview" || num === "01Overview") {
-      debugger;
+    if (num === "OVERVIEW") {
       setText(overview);
       setImage(images.planet);
     }
-    if (num === "Internal Structure" || num === "02InternalStructure") {
+    if (num === "INTERNAL STRUCTURE") {
       setText(structure);
       setImage(images.internal);
     }
-    if (num === "Surface Geology" || num === "03Surface Geology") {
+    if (num === "SURFACE GEOLOGY") {
       setText(geology);
-      setImage(images.geology);
+      setImage({ img1: images.planet, img2: images.geology });
     }
+    console.log(image);
   };
 
   return (
-    <div>
+    <>
       <div className="planet-data-container">
-        <PlanetImage image={image} />
         <PlanetData
           name={name}
           text={text}
           handleData={handleClick}
-          planet={planet}
+          image={image}
         />
       </div>
       <PlanetFacts
@@ -67,6 +63,6 @@ export const PlanetLanding = ({ planetId }) => {
         radius={radius}
         temperature={temperature}
       />
-    </div>
+    </>
   );
 };

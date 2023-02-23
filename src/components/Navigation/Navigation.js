@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { DesktopMenu } from "./DesktopNavigation";
+import { MobileMenu } from "./MobileNavigation";
 import "./Navigations.css";
+
 export const Navigation = ({ changePlanet }) => {
-  const handleChange = (e) => changePlanet(e.target.value);
+  const [fullMenuOpen, setFullMenuOpen] = useState(false);
+  let icon = useRef(null);
+
+  console.log(icon.current);
+  const handleChange = (planet) => changePlanet(planet);
+
+  const handleClick = () => {
+    setFullMenuOpen(!fullMenuOpen);
+  };
 
   const planets = [
     "Mercury",
@@ -19,15 +30,18 @@ export const Navigation = ({ changePlanet }) => {
       <div>
         <h2>THE PLANETS</h2>
       </div>
-      <ul className="nav-items">
-        {planets.map((planet, i) => {
-          return (
-            <li value={i} key={planet} onClick={handleChange}>
-              {planet}
-            </li>
-          );
-        })}
-      </ul>
+      <div className="icon" onClick={handleClick} ref={icon}>
+        |||
+      </div>
+      {fullMenuOpen ? (
+        <MobileMenu
+          onClick={handleChange}
+          planets={planets}
+          setFullMenuOpen={setFullMenuOpen}
+        />
+      ) : (
+        <DesktopMenu onClick={handleChange} planets={planets} />
+      )}
     </nav>
   );
 };

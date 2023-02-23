@@ -1,7 +1,19 @@
 nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0 4em 0 4em;
+  margin: 0;
+  border-bottom: 1px solid var(--main-blackish);
+}
+
+nav h2 {
+  margin: 0.5em;
+  font-weight: 400;
+}
+
+.nav-transparent-container {
+  display: none;
 }
 
 .nav-items {
@@ -11,13 +23,112 @@ nav {
 }
 
 .nav-items > * {
-  margin-left: 2em;
+  margin-left: 3.5em;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+  color: var(--white);
+  font-weight: 700;
 }
 
 .nav-items > *:hover {
   cursor: pointer;
   color: var(--main-blackish);
+}
+.icon {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  nav {
+    display: block;
+    text-align: center;
+  }
+
+  .nav-items {
+    width: 100%;
+    justify-content: space-evenly;
+    padding: 0;
+  }
+
+  .nav-items > * {
+    margin: 0;
+  }
+
+  .nav-transparent-container {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav {
+    justify-content: space-between;
+    padding: 2em;
+    position: relative;
+  }
+
+  nav h2 {
+    margin: 0;
+  }
+
+  .nav-items {
+    display: none;
+  }
+
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0;
+    width: 99%;
+    height: 100vh;
+    background-color: var(--main-black);
+
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    z-index: 5;
+  }
+
+  .mobile-nav-items li {
+    width: inherit;
+    padding: 2em 0;
+    border-bottom: 1px solid var(--main-blackish);
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.4em;
+    font-weight: 500;
+    letter-spacing: 1;
+  }
+
+  .nav-circle {
+    display: inline-block;
+    content: "";
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 100px;
+    margin: 0 2em;
+  }
+
+  .arrow {
+    display: inline-block;
+    border-right: 1px solid var(--main-blackish);
+    border-bottom: 1px solid var(--main-blackish);
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    align-self: center;
+    margin: 0 2em;
+  }
+
+  .icon {
+    display: block;
+    rotate: 90deg;
+    font-size: 3.5em;
+  }
+
+  .nav-transparent-container {
+    display: block;
+  }
 }

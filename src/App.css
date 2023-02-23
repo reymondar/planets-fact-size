@@ -11,14 +11,14 @@ html {
   --main-black: #070724;
   --main-blackish: #38384f;
   --main-gray: #838391;
-  --mercury: #419ebb;
-  --venus: #eda249;
-  --earth: #6f2ed6;
-  --mars: #d83a34;
-  --jupiter: #cd5120;
-  --saturn: #1ec2a4;
-  --neptune: #2d68f0;
-
+  --Mercury: #419ebb;
+  --Venus: #eda249;
+  --Earth: #6f2ed6;
+  --Mars: #d83a34;
+  --Jupiter: #cd5120;
+  --Uranus: #1ec2a4;
+  --Neptune: #2d68f0;
+  --Saturn: #cd5120;
   /*typos*/
 }
 
@@ -31,6 +31,9 @@ body {
 h1 {
   font-family: "Antonio", sans-serif;
   font-size: 8rem;
+  margin: 0;
+  letter-spacing: 0.03em;
+  font-weight: 500;
 }
 
 h2 {
@@ -58,7 +61,6 @@ p {
   text-transform: none;
 }
 
-.planet-data-container {
-  display: flex;
-  justify-content: space-around;
+a {
+  color: var(--main-gray);
 }

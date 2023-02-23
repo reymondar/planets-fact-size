@@ -9,13 +9,10 @@ export const PlanetFacts = ({ rotation, revolution, radius, temperature }) => {
     { title: "Average Temp.", fact: temperature },
   ];
   return (
-    <div
-      style={{ display: "flex", justifyContent: "space-around" }}
-      className="planet-facts-container"
-    >
+    <div className="planet-facts-container">
       {facts.map((item, i) => {
         return (
-          <div key={`${item}${i}`}>
+          <div key={`${item}${i}`} className="planet-fact-item">
             <h3>{item.title}</h3>
             <h2>{item.fact}</h2>
           </div>

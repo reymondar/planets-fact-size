@@ -5,6 +5,7 @@ import { PlanetLanding } from "./Planets/Planet";
 
 function App() {
   const [actualPlanet, setActualPlanet] = useState(0);
+
   const changePlanet = (navPlanet) => setActualPlanet(navPlanet);
 
   return (
