@@ -6,10 +6,10 @@ export const PlanetImage = ({ image }) => {
       {typeof image === "string" ? (
         <img src={image} alt="" />
       ) : (
-        <div className="planet-images-compiled">
-          <img src={image.img1} alt="" />
-          <img src={image.img2} alt="" />
-        </div>
+        <>
+          <img src={image.img1} alt="" className="main-image" />
+          <img src={image.img2} alt="" className="secondary-image" />
+        </>
       )}
     </div>
   );

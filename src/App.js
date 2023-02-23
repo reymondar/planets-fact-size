@@ -1,7 +1,7 @@
-import "../App.css";
 import React, { useState } from "react";
-import { Navigation } from "./Navigation/Navigation.js";
-import { PlanetLanding } from "./Planets/Planet";
+import "./App.css";
+import { Navigation } from "./components/Navigation/Navigation.js";
+import { PlanetLanding } from "./components/Planets/Planet";
 
 function App() {
   const [actualPlanet, setActualPlanet] = useState(0);

@@ -26,6 +26,7 @@ body {
   background: var(--main-black);
   color: var(--white);
   text-transform: uppercase;
+  background-image: url("./background-stars.svg");
 }
 
 h1 {
