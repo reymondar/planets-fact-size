@@ -24,6 +24,7 @@ export const PlanetData = ({ name, text, handleData, image }) => {
   return (
     <>
       <Info name={name} text={text} image={image} />
+
       <div className="planet-buttons">
         {buttons.map((content, i) => {
           return (
