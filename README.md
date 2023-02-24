@@ -15,4 +15,11 @@ In conclusion it was a great project to get going with the basics after so much 
 ## References
 I can't share Figma's file since is not mine but I'll leave free screenshots to see how the final version should look like (and ofc it does :P).
 
+## Desktop
 ![preview](https://user-images.githubusercontent.com/101018458/221227542-2823036e-2dc0-42fa-8722-035d94553647.jpg)
+
+## Tablet
+![tablet](https://user-images.githubusercontent.com/101018458/221239082-c0da650d-3049-4a17-b98a-4ef07f9f9f2d.jpg)
+
+## Mobile
+![mobile](https://user-images.githubusercontent.com/101018458/221239189-521498ea-647e-48a4-ad9b-55e305e50fdb.jpg)
