@@ -10,7 +10,7 @@ So for this project I used Frontend.io Json file to pull the info. This was pret
 
 Responsiveness was the hardest part since I wanted to avoid using libraries or custom hooks created by others than me.
 
-In conclusion it was a great project to get going with the basics after so much challenges, courses, vacations and work interferences. This is my first trully project uploaded to github, probably I'll upload my vanilla JS games on day but for now I'm good :).
+In conclusion it was a great project to get going with the basics after so much challenges, courses, vacations and work interferences. This is my first trully project uploaded to github, probably I'll upload my vanilla JS games one day but for now I'm good :).
 
 ## References
 I can't share Figma's file since is not mine but I'll leave free screenshots to see how the final version should look like (and ofc it does :P).
