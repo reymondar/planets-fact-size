@@ -37,7 +37,7 @@
   margin-right: 2em;
 }
 
-.planet-buttons :current {
+.planet-buttons:current {
   background-color: var(--mercury);
 }
 
@@ -101,9 +101,10 @@
 
   .planet-buttons button {
     display: block;
+    box-sizing: border-box;
     height: 100%;
     border: none;
-    padding: 0;
+    padding-right: 1.8rem;
     margin: 0;
     text-align: center;
     font-size:0;
