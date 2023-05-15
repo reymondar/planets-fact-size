@@ -5,13 +5,13 @@ import { PlanetLanding } from "./components/Planets/Planet";
 
 function App() {
   const [actualPlanet, setActualPlanet] = useState(0);
-
+  const [fullMenuOpen, setFullMenuOpen] = useState(false);
   const changePlanet = (navPlanet) => setActualPlanet(navPlanet);
 
   return (
     <>
-      <Navigation changePlanet={changePlanet} />
-      <PlanetLanding planetId={actualPlanet} />
+      <Navigation changePlanet={changePlanet} fullMenuOpen={fullMenuOpen} setFullMenuOpen={setFullMenuOpen} />
+      {!fullMenuOpen && <PlanetLanding planetId={actualPlanet} />}
     </>
   );
 }

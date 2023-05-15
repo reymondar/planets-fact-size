@@ -1,17 +1,17 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, {  useRef } from "react";
 import { DesktopMenu } from "./DesktopNavigation";
 import { MobileMenu } from "./MobileNavigation";
 import "./Navigations.css";
 
-export const Navigation = ({ changePlanet }) => {
-  const [fullMenuOpen, setFullMenuOpen] = useState(false);
+export const Navigation = ({ changePlanet , fullMenuOpen , setFullMenuOpen }) => {
+  
   let icon = useRef(null);
 
   console.log(icon.current);
   const handleChange = (planet) => changePlanet(planet);
 
   const handleClick = () => {
-    setFullMenuOpen(!fullMenuOpen);
+    setFullMenuOpen(prev => !prev);
   };
 
   const planets = [
@@ -25,6 +25,7 @@ export const Navigation = ({ changePlanet }) => {
     "Neptune",
   ];
 
+  console.log(fullMenuOpen)
   return (
     <nav>
       <div>

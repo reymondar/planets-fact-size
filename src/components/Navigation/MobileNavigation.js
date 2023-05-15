@@ -4,7 +4,7 @@ import "./Navigations.css";
 export const MobileMenu = ({ onClick, planets, setFullMenuOpen }) => {
   const sendPlanet = (e) => {
     onClick(e.currentTarget.value);
-    setFullMenuOpen(false);
+    setFullMenuOpen(prev => !prev);
   };
   return (
     <ul className="mobile-nav-items">

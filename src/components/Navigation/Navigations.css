@@ -65,6 +65,7 @@ nav h2 {
     justify-content: space-between;
     padding: 2em;
     position: relative;
+    max-height: 100vh;
   }
 
   nav h2 {
@@ -80,10 +81,8 @@ nav h2 {
     flex-direction: column;
 
     padding: 0;
-    width: 99%;
-    height: 100vh;
-    background-color: var(--main-black);
-
+    width: 100%;
+    height: fit-content;
     position: absolute;
     top: 100%;
     left: 0%;
@@ -123,7 +122,8 @@ nav h2 {
   }
 
   .icon {
-    display: block;
+    display: inline-block;
+    width: auto;
     rotate: 90deg;
     font-size: 3.5em;
   }
