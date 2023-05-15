@@ -2,6 +2,20 @@ import React, { useEffect, useState } from "react";
 import { Info } from "../Info/Info";
 import "./PlanetData.css";
 
+
+// const Button = () => {
+//   <button
+//               style={
+//                 active === content ? { backgroundColor: `var(--${name})` } : {}
+//               }
+//               className={name}
+//               onClick={handleChange}
+//               key={i}
+//             >
+//               {content}
+//   </button>
+// }
+
 export const PlanetData = ({ name, text, handleData, image }) => {
   const [active, setActive] = useState("OVERVIEW");
 
@@ -32,7 +46,7 @@ export const PlanetData = ({ name, text, handleData, image }) => {
               style={
                 active === content ? { backgroundColor: `var(--${name})` } : {}
               }
-              className={name}
+              className={`${name} ${i}`}
               onClick={handleChange}
               key={i}
             >
