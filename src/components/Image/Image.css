@@ -6,6 +6,8 @@
 
   display: block;
   position: relative;
+
+  overflow: visible;
 }
 
 img {
@@ -21,6 +23,8 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .planet-image {
+    padding: 0;
+    width: 5rem;
     display: flex;
     justify-content: center;
     grid-row: 1 / 6;
@@ -44,6 +48,7 @@ img {
 
 @media only screen and (max-width: 768px) {
   .planet-image {
+    width: fit-content;
     max-width: 100%;
     grid-row: 2 / 5;
     grid-column: 2 / 10;
