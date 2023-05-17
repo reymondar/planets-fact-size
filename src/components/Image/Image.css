@@ -23,20 +23,18 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   .planet-image {
-    padding: 0;
-    width: 5rem;
-    display: flex;
-    justify-content: center;
     grid-row: 1 / 6;
     grid-column: 3 / 9;
-    margin-bottom: 4em;
+    width: 30rem;
+    height: auto;
   }
 
   img {
-    transform: scale(0.5);
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    overflow: visible;
+    margin: 0 auto;
+    display: block;
+    object-fit: fill;
   }
 
   .secondary-image {
